@@ -9,12 +9,13 @@ import deepcut
 import requests
 from bs4 import BeautifulSoup
 
-
 import time
 from pymongo import MongoClient
 import os
 import glop
 import tag_object as tag
+
+
 # - *- coding: utf- 8 - *-
 
 # function get news from website thairath only
@@ -57,4 +58,4 @@ if __name__ == '__main__':
     news = get_news(URL)
 
     print(tag.tag_start(news))
-    #print(tag.tag_object(news))
+    # print(tag.tag_object(news))
