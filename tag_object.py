@@ -18,17 +18,42 @@ def tag_start(read_text):
 
 def tag_time(read_text):
     # tad_date_and_time
-    regex_time = r"(([0-1][\d]|[2][0-4])\s?(:|.)([0-5][\d])\s?(นาฬิกา|น\.|น)|(ช่วง|ตอน)(เช้า|ค่ำ|เย็น|ดึก|บ่าย|สาย|กลางดึก))"
+    regex_time = r"(([0-1][\d]|[2][0-4])\s?(:|.)([0-5][\d])\s?(นาฬิกา|น\.|น))"
+    regex_time1 = r"((ช่วง|ตอน)(เช้า))"
+    regex_time2 = r"((ช่วง|ตอน)(สาย))"
+    regex_time3 = r"((ช่วง|ตอน)(เที่ยง))"
+    regex_time4 = r"((ช่วง|ตอน)(บ่าย))"
+    regex_time5 = r"((ช่วง|ตอน)(เย็น))"
+    regex_time6 = r"((ช่วง|ตอน)(ค่ำ))"
+    regex_time7 = r"((ช่วง|ตอน)(ดึก))"
+    regex_time8 = r"((ช่วง|ตอน)(กลางดึก))"
+    regex_time9 = r"((ช่วง|ตอน)(เช้ามืด|เช้าตรู่))"
+
     matches_time = regex.sub(regex_time, r'<time>\1</time>', read_text)
     read_text = matches_time
+    matches_time9 = regex.sub(regex_time9, r'<time>03:00 น. - 05:59 น.</time>', read_text)
+    read_text = matches_time9
+    matches_time1 = regex.sub(regex_time1, r'<time>06:00 น. - 08:59 น.</time>', read_text)
+    read_text = matches_time1
+    matches_time2 = regex.sub(regex_time2, r'<time>09:00 น. - 10:59 น.</time>', read_text)
+    read_text = matches_time2
+    matches_time3 = regex.sub(regex_time3, r'<time>11:00 น. - 12:59 น.</time>', read_text)
+    read_text = matches_time3
+    matches_time4 = regex.sub(regex_time4, r'<time>13:00 น. - 15:59 น.</time>', read_text)
+    read_text = matches_time4
+    matches_time5 = regex.sub(regex_time5, r'<time>16:00 น. - 18:59 น.</time>', read_text)
+    read_text = matches_time5
+    matches_time6 = regex.sub(regex_time6, r'<time>19:00 น. - 20:59 น.</time>', read_text)
+    read_text = matches_time6
+    matches_time7 = regex.sub(regex_time7, r'<time>21:00 น. - 02:59 น.</time>', read_text)
+    read_text = matches_time7
+    matches_time8 = regex.sub(regex_time8, r'<time>01:00 น. - 03:59 น.</time>', read_text)
+    read_text = matches_time8
+
     return read_text
 
 
 def tag_date(read_text):
-    # tad_date_and_time
-    regex_time = r"(([0-1][\d]|[2][0-4])\s?(:|.)([0-5][\d])\s?(นาฬิกา|น\.|น)|(ช่วง|ตอน)(เช้า|ค่ำ|เย็น|ดึก|บ่าย|สาย|กลางดึก))"
-    matches_time = regex.sub(regex_time, r'<time>\1</time>', read_text)
-    read_text = matches_time
     regex_date = (
         r"(([1-9]|[0-2][\d]|[3][0-1])\s?(/|-)?(ม\.ค\.|มกราคม|มกรา|ก\.พ\.|กุมภาพันธ์|กุมภา|มี\.ค\.|มีนาคม|มีนา|เม\.ย\.|"
         "เมษายน|เมษา|พ\.ค\.|พฤษภาคม|พฤษภา|มิ\.ย\.|มิถุนายน|มิถุนา|ก\.ค\.|กรกฎาคม|กรกฎา|ส\.ค\.|สิงหาคม|สิงหา|ก\.ย\.|"
@@ -36,7 +61,9 @@ def tag_date(read_text):
         "(\d\d\d\d|\d\d)?|([1-9]|[0-2][\d]|[3][0-1])\s?(/|-|.)([0][\d]|[1][0-2])\s?(/|-|.)(\d\d\d\d|\d\d))")
     matches_date = regex.sub(regex_date, r'<date>\1</date>', read_text)
     read_text = matches_date
+
     return read_text
+
 
 def tag_action(read_text):
     read_file_act1 = codecs.open('dictionary/กระทำ1.txt', 'r', 'utf8')
@@ -59,6 +86,7 @@ def tag_action(read_text):
     read_text = matches_act2
 
     return read_text
+
 
 def tag_location(read_text):
     """
@@ -164,7 +192,7 @@ def tag_location(read_text):
 
     regex_tambon2 = (r"((ตำบล|(?<!\.)ต\.)\s?(" + list_str_t + "){e<=1})")
 
-    regex_tambon = (r"<tambon_fail>(\s?(ตำบล|(?<!\.)ต\.)\s?(" + list_str_t + ")\s?)</tambon_fail>")
+    regex_tambon = (r"<tambon_fail>(\s?(ตำบล|(?<!\.)ต\.)\s?(" + list_str_t + "))</tambon_fail>")
 
     regex_all = (
         r"((?!ซอยดังกล่าว|ซอยหอ|ซอยหรือ|ซอยใกล้|ซอยไป|ซอยมี|ซอยถัด|สน.ที่|ซอยริมถนน|ซอยข้าง|ซอยเข้า|ซอยเปลี่ยว|ซอยที่เกิดเหตุ|ซอยตัน|ซอยหลบ|ซอยแคบ|ซอยด้วย|ซอยไม่มีชื่อ|ซอยข้างบ้าน|สน.ออก)(ซอย|\sซ\.|(?<!ท|\.)สภ\.|สน\.)(\d\d?|[ก-๙]{2,}(?=ชัก|ไป|สอบ|ได้|จะ|ดำเนิน|มายัง|ต่อไป|จับกุม|เพื่อ|กล่าว|ดำเนิน|และ|รับเเจ้ง|ได้รับ|รับตัว)"
@@ -263,7 +291,7 @@ def tag_location(read_text):
         # print (word)
 
         aof = ("แก้คำที่ใน tag <hospital2> เป็น: <hospital>" + word + "</hospital>")
-        print(aof)
+        #print(aof)
         regex_hos1 = (r"((โรงพยาบาล|ร\.พ\.|รพ\.))")
         matches_hos1 = regex.sub(regex_hos1, r'', word)
         read_text1 = matches_hos1
@@ -302,7 +330,7 @@ def tag_location(read_text):
             word = i.text.strip('\"')
         # print (word)
         aof = ("แก้คำที่ใน tag <mall2> เป็น: <mall>" + word + "</mall>")
-        print(aof)
+        #print(aof)
         regex_mall1 = (r"((ห้างสรรพสินค้า|ห้าง))")
         matches_mall1 = regex.sub(regex_mall1, r'', word)
         read_text1 = matches_mall1
@@ -338,7 +366,7 @@ def tag_location(read_text):
             word = i.text
         # print (word)
         aof = ("แก้คำที่ใน tag <university2> เป็น : <university>" + word + "</university>")
-        print(aof)
+        #print(aof)
         regex_uni1 = (r"((มหาวิทยาลัย|มหาลัย))")
         matches_uni1 = regex.sub(regex_uni1, r'', word)
         read_text1 = matches_uni1
@@ -512,7 +540,6 @@ def tag_person(read_text):
                         check_r += 1
                     else:
                         check_r += 1
-
                 if check_p == False:
                     print('False')
                     #tot[i].insert(i,[])
