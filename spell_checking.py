@@ -1,16 +1,18 @@
 import regex
 import time
 import json
+
+
 # -*- coding: utf-8 -*-
 
-def spell_checker(spell):
-    spell = province_fail(spell)
-    spell = province_amphoe_fail(spell)
-    spell = province_tambon_fail(spell)
-    spell = amphoe_tambon_fail(spell)
-    spell = province_amphoe_fail_tambon_fail(spell)
-    # read_text = tag_......
-    return spell
+def spell_checker(text_tag):
+    text_tag_edit = province_fail()
+    text_tag_edit = province_amphoe_fail()
+    text_tag_edit = province_tambon_fail()
+    text_tag_edit = amphoe_tambon_fail()
+    text_tag_edit = province_amphoe_fail_tambon_fail()
+
+    return text_tag_edit
 
 
 def get_json_data():
@@ -256,3 +258,37 @@ def Autocorrection(x):
             x = correct_x
 
     return x
+
+
+def edit_distance1(s1, s2):
+    m = len(s1) + 1
+    n = len(s2) + 1
+
+    tbl = {}
+    for i in range(m): tbl[i, 0] = i
+    for j in range(n): tbl[0, j] = j
+    for i in range(1, m):
+        for j in range(1, n):
+            cost = 0 if s1[i - 1] == s2[j - 1] else 1
+            tbl[i, j] = min(tbl[i, j - 1] + 1, tbl[i - 1, j] + 1, tbl[i - 1, j - 1] + cost)
+
+    return tbl[i, j]
+
+
+def find_result(list_result, word_fail):
+    list_index = []
+    # print(list_result) #แสดง list ชื่อที่เป็น subset ของข้อมูล tag ตัวหน้า
+    for x in list_result:
+        list_index.append(edit_distance1(word_fail, x))
+
+    # print(list_index) #แสดง list ค่าการแก้คำ ระหว่างคำผิดที่เรา input มา เทียบกับคำที่อยู่ใน list_result
+    for i in range(len(list_index)):
+        if list_index[i] == min(list_index):
+            # print(i,list_index[i])
+            index_result = i
+
+    # print(index_result) #แสดงตำแหน่งของคำที่มีการแก้น้อยที่สุด
+    for i in range(len(list_result)):
+        if index_result == i:
+            result = list_result[i]
+    return result
