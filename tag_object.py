@@ -298,7 +298,7 @@ def tag_location(read_text):
 
         word_not_dict = matches_hos1
         # print(word_not_dict)
-        fobj = open("โรงบาล1.txt", 'r', encoding='utf-8')
+        fobj = open("dictionary/โรงบาล1.txt", 'r', encoding='utf-8')
         text = fobj.read().strip().split()
         fobj.close()
         # เงื่อนไข
@@ -310,7 +310,7 @@ def tag_location(read_text):
             # print("มีในdictแล้ว")
             continue
         else:
-            fobjw = open("โรงบาล1.txt", 'a', encoding='utf-8')
+            fobjw = open("dictionary/โรงบาล1.txt", 'a', encoding='utf-8')
             fobjw.write("\n" + s)
             # continue
             fobjw.close()
@@ -337,7 +337,7 @@ def tag_location(read_text):
 
         word_not_dict = matches_mall1
         # print(word_not_dict)
-        fobj = open("ห้าง.txt", 'r', encoding='utf-8')
+        fobj = open("dictionary/ห้าง.txt", 'r', encoding='utf-8')
         text = fobj.read().strip().split()
         fobj.close()
         # เงื่อนไข
@@ -348,7 +348,7 @@ def tag_location(read_text):
             # print("มีในdictแล้ว")
             continue
         else:
-            fobjw = open("ห้าง.txt", 'a', encoding='utf-8')
+            fobjw = open("dictionary/ห้าง.txt", 'a', encoding='utf-8')
             fobjw.write("\n" + s)
             continue
         fobjw.close()
@@ -373,7 +373,7 @@ def tag_location(read_text):
 
         word_not_dict = matches_uni1
         # print(word_not_dict)
-        fobj = open("มหาลัย.txt", 'r', encoding='utf-8')
+        fobj = open("dictionary/มหาลัย.txt", 'r', encoding='utf-8')
         text = fobj.read().strip().split()
         fobj.close()
         # เงื่อนไข
@@ -384,7 +384,7 @@ def tag_location(read_text):
             # print("มีในdictแล้ว")
             continue
         else:
-            fobjw = open("มหาลัย.txt", 'a', encoding='utf-8')
+            fobjw = open("dictionary/มหาลัย.txt", 'a', encoding='utf-8')
             fobjw.write("\n" + s)
             # continue
         fobjw.close()
