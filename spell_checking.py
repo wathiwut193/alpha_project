@@ -6,11 +6,13 @@ import json
 # -*- coding: utf-8 -*-
 
 def spell_checker(text_tag):
-    text_tag_edit = province_fail()
-    text_tag_edit = province_amphoe_fail()
-    text_tag_edit = province_tambon_fail()
-    text_tag_edit = amphoe_tambon_fail()
-    text_tag_edit = province_amphoe_fail_tambon_fail()
+    text_tag_edit = province_fail(text_tag)
+    text_tag_edit = province_amphoe_fail(text_tag)
+    text_tag_edit = province_tambon_fail(text_tag)
+    text_tag_edit = amphoe_tambon_fail(text_tag)
+    text_tag_edit = province_amphoe_fail_tambon_fail(text_tag)
+    text_tag_edit = edit_distance1(text_tag)
+    text_tag_edit = Autocorrection(text_tag)
 
     return text_tag_edit
 
@@ -120,35 +122,35 @@ def province_amphoe_fail_tambon_fail(pro_amp_tam_matches, Data):
 
 
 def dict_action():
-    with open('corpus/Action.txt', 'r', encoding='utf8') as read_file:
+    with open('dictionary/dict_verb/กระทำ1.txt', 'r', encoding='utf8') as read_file:
         dict = read_file.read()
         list_dict = dict.split('\n')
         return list_dict
 
 
 def dict_hospital():
-    with open('corpus/hospital.txt', 'r', encoding='utf8') as read_file:
+    with open('dictionary/dict_location/โรงบาล1.txt', 'r', encoding='utf8') as read_file:
         dict = read_file.read()
         list_dict = dict.split('\n')
         return list_dict
 
 
 def dict_country():
-    with open('corpus/country.txt', 'r', encoding='utf8') as read_file:
+    with open('dictionary/dict_location/ประเทศ.txt', 'r', encoding='utf8') as read_file:
         dict = read_file.read()
         list_dict = dict.split('\n')
         return list_dict
 
 
 def dict_store():
-    with open('corpus/store.txt', 'r', encoding='utf8') as read_file:
+    with open('dictionary/dict_location/ห้าง.txt', 'r', encoding='utf8') as read_file:
         dict = read_file.read()
         list_dict = dict.split('\n')
         return list_dict
 
 
 def dict_university():
-    with open('corpus/university.txt', 'r', encoding='utf8') as read_file:
+    with open('dictionary/dict_location/มหาลัย.txt', 'r', encoding='utf8') as read_file:
         dict = read_file.read()
         list_dict = dict.split('\n')
         return list_dict

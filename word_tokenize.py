@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import deepcut
 import regex
+
+
 # -*- coding: utf-8 -*-
 
 def run(text):
@@ -29,12 +31,10 @@ def word_segment(text):
 
 
 def word_segment_identify_tag(text):
-
     pattern = r"(<[^<]วันที่>[^<]*</[^<]วันที่>)"
     matches = regex.finditer(pattern, text, regex.MULTILINE)
     match_i = []
     for matchNum, match in enumerate(matches, start=1):
-
         match_i.append(match.start())  # เก็บตำแหน่ง tag ตัวแรกที่เจอ
         match_i.append(match.end())  # เก็บตำแหน่ง tag ตัวสุดท้ายที่เจอ
 
@@ -61,7 +61,6 @@ def word_segment_identify_tag(text):
                     str_tag += '\n'  # ใส่ช่องว่างให้ตัวสุดท้ายให้หลัง tag
                 else:
                     str_tag += text[i]  # else ให้เอาค่า str ตำแหน่ง i ไปใส่ใน str_tag
-
 
     tag_split = (str_tag.split('\n'))
 

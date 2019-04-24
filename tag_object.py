@@ -7,11 +7,11 @@ import codecs
 
 
 def tag_start(read_text):
-    #read_text = tag_time(read_text)
-    #read_text = tag_date(read_text)
+    # read_text = tag_time(read_text)
+    # read_text = tag_date(read_text)
     read_text = tag_action(read_text)
     read_text = tag_location(read_text)
-    #read_text = tag_person(read_text)
+    # read_text = tag_person(read_text)
     # read_text = tag_......
     return read_text
 
@@ -227,9 +227,9 @@ def tag_location(read_text):
     read_text = matches_area2
     matches_area = regex.sub(regex_area, r'<เขต>\1</เขต>', read_text)
     read_text = matches_area
-    matches_district2 = regex.sub(regex_district2, r'<ตำบล_ผิด>\1</ตำบล_ผิด>', read_text)
+    matches_district2 = regex.sub(regex_district2, r'<แขวง_ผิด>\1</แขวง_ผิด>', read_text)
     read_text = matches_district2
-    matches_district = regex.sub(regex_district, r'<ตำบล>\1</ตำบล>', read_text)
+    matches_district = regex.sub(regex_district, r'<แขวง>\1</แขวง>', read_text)
     read_text = matches_district
     matches_road2 = regex.sub(regex_road2, r'<ถนน_ผิด>\1</ถนน_ผิด>', read_text)
     read_text = matches_road2
@@ -262,7 +262,7 @@ def tag_location(read_text):
     matches_university = regex.sub(regex_university, r'<มหาวิทยาลัย>\1</มหาวิทยาลัย>', read_text)
     read_text = matches_university
 
-    regex_hos2 = (r"<มหาวิทยาลัย_ผิด>((โรงพยาบาล|ร\.พ\.|รพ\.)(?!ได้|" + list_str_h + ")([ก-๙]{2,}))</มหาวิทยาลัย_ผิด>")
+    regex_hos2 = (r"<โรงพยาบาล_ผิด>((โรงพยาบาล|ร\.พ\.|รพ\.)(?!ได้|" + list_str_h + ")([ก-๙]{2,}))</โรงพยาบาล_ผิด>")
     regex_mall2 = (
             r"<ห้าง_ผิด>((?!ห้างฉัตร)(ห้างสรรพสินค้า|ห้าง)((?!ร้าน|ดัง|เปิด|และ|ค้า|ได้|ซึ่ง|" + list_str_m + ")[ก-๙]{2,}))</ห้าง_ผิด>")
     regex_university2 = (
@@ -291,7 +291,7 @@ def tag_location(read_text):
         # print (word)
 
         aof = ("แก้คำที่ใน tag <โรงพยาบาล_ผิด> เป็น: <โรงพยาบาล>" + word + "</โรงพยาบาล>")
-        # print(aof)
+        #print(aof)
         regex_hos1 = (r"((โรงพยาบาล|ร\.พ\.|รพ\.))")
         matches_hos1 = regex.sub(regex_hos1, r'', word)
         read_text1 = matches_hos1
