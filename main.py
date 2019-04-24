@@ -8,7 +8,9 @@ Created on Mon Apr 22 14:15:00 2019
 
 import tag_object as tag
 import word_tokenize as wt
-import spell_checking as sc
+#import spell_checking as sc
+import rule
+import class_object as obj
 
 # - *- coding: utf- 8 - *-
 if __name__ == '__main__':
@@ -23,6 +25,14 @@ if __name__ == '__main__':
         tag_object = tag.tag_start(word_tokenize)
 
         result = tag_object.replace("|","")
-        result = sc.spell_checker(result)
+        #result = sc.spell_checker(result)
 
-        print(result)
+        list_2d = rule.rule_strat(result)
+        for i in range(len(list_2d)):
+            for j in range(len(list_2d[i])):
+                print(list_2d[i][j].__dict__)
+                #print(str(list_2d[i][j]))
+
+        #print(list_2d)
+
+        #print(result)
