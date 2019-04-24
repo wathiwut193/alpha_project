@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import deepcut
-
+# -*- coding: utf-8 -*-
 
 def run(text):
     text = get_news(text)

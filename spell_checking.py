@@ -1,7 +1,7 @@
 import regex
 import time
 import json
-
+# -*- coding: utf-8 -*-
 
 def spell_checker(spell):
     spell = province_fail(spell)
