@@ -3,3 +3,5 @@ tensorflow
 deepcut
 Flask
 pymongo
+regex
+pythainlp
