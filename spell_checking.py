@@ -1,6 +1,6 @@
 import regex
 import time
-from allplace import get_json_data
+import json
 
 
 def spell_checker(spell):
@@ -11,6 +11,12 @@ def spell_checker(spell):
     spell = province_amphoe_fail_tambon_fail(spell)
     # read_text = tag_......
     return spell
+
+
+def get_json_data():
+    with open('dictionary/json_dict/raw_database.json', 'r', encoding='utf8') as f:
+        data = json.load(f)
+    return data
 
 
 def province_fail(pro_matches, Data):

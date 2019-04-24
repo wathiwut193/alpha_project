@@ -5,14 +5,7 @@ Created on Mon Apr 22 14:15:00 2019
 @author: wathi
 """
 
-import requests
-from bs4 import BeautifulSoup
-import deepcut
-import time
-from pymongo import MongoClient
-import os
-import glop
-import regex
+
 import tag_object as tag
 import word_tokenize as wt
 

@@ -66,13 +66,13 @@ def tag_date(read_text):
 
 
 def tag_action(read_text):
-    read_file_act1 = codecs.open('dictionary/กระทำ1.txt', 'r', 'utf8')
+    read_file_act1 = codecs.open('dictionary/dict_verb/กระทำ1.txt', 'r', 'utf8')
     read_act1 = read_file_act1.read()
     read_act1_list = read_act1.split('\n')
     list_str_act1 = '|'.join(read_act1_list[:len(read_act1_list) - 1])
     list_str_act1 += '|' + read_act1_list[len(read_act1_list) - 1]
 
-    read_file_act2 = codecs.open('dictionary/กระทำ2.txt', 'r', 'utf8')
+    read_file_act2 = codecs.open('dictionary/dict_verb/กระทำ2.txt', 'r', 'utf8')
     read_act2 = read_file_act2.read()
     read_act2_list = read_act2.split('\n')
     list_str_act2 = '|'.join(read_act2_list[:len(read_act2_list) - 1])
@@ -95,67 +95,67 @@ def tag_location(read_text):
     :return tag <สภานที่>
     """
 
-    read_file_p = codecs.open('dictionary/จังหวัด.txt', 'r', 'utf-8')
+    read_file_p = codecs.open('dictionary/dict_location/จังหวัด.txt', 'r', 'utf-8')
     read_p = read_file_p.read()
     read_p_list = read_p.split('\n')
     list_str_p = '|'.join(read_p_list[:len(read_p_list) - 1])
     list_str_p += '|' + read_p_list[len(read_p_list) - 1]
 
-    read_file_c = codecs.open('dictionary/ประเทศ.txt', 'r', 'utf-8')
+    read_file_c = codecs.open('dictionary/dict_location/ประเทศ.txt', 'r', 'utf-8')
     read_c = read_file_c.read()
     read_c_list = read_c.split('\n')
     list_str_c = '|'.join(read_c_list[:len(read_c_list) - 1])
     list_str_c += '|' + read_c_list[len(read_c_list) - 1]
 
-    read_file_t = codecs.open('dictionary/ตำบล.txt', 'r', 'utf-8')
+    read_file_t = codecs.open('dictionary/dict_location/ตำบล.txt', 'r', 'utf-8')
     read_t = read_file_t.read()
     read_t_list = read_t.split('\n')
     list_str_t = '|'.join(read_t_list[:len(read_t_list) - 1])
     list_str_t += '|' + read_t_list[len(read_t_list) - 1]
 
-    read_file_a = codecs.open('dictionary/อำเภอ.txt', 'r', 'utf-8')
+    read_file_a = codecs.open('dictionary/dict_location/อำเภอ.txt', 'r', 'utf-8')
     read_a = read_file_a.read()
     read_a_list = read_a.split('\n')
     list_str_a = '|'.join(read_a_list[:len(read_a_list) - 1])
     list_str_a += '|' + read_a_list[len(read_a_list) - 1]
 
-    read_file_area = codecs.open('dictionary/เขต.txt', 'r', 'utf-8')
+    read_file_area = codecs.open('dictionary/dict_location/เขต.txt', 'r', 'utf-8')
     read_area = read_file_area.read()
     read_area_list = read_area.split('\n')
     list_str_area = '|'.join(read_area_list[:len(read_area_list) - 1])
     list_str_area += '|' + read_area_list[len(read_area_list) - 1]
 
-    read_file_d = codecs.open('dictionary/แขวง.txt', 'r', 'utf-8')
+    read_file_d = codecs.open('dictionary/dict_location/แขวง.txt', 'r', 'utf-8')
     read_d = read_file_d.read()
     read_d_list = read_d.split('\n')
     list_str_d = '|'.join(read_d_list[:len(read_d_list) - 1])
     list_str_d += '|' + read_d_list[len(read_d_list) - 1]
 
-    read_file_r = codecs.open('dictionary/ถนน.txt', 'r', 'utf-8')
+    read_file_r = codecs.open('dictionary/dict_location/ถนน.txt', 'r', 'utf-8')
     read_r = read_file_r.read()
     read_r_list = read_r.split('\n')
     list_str_r = '|'.join(read_r_list[:len(read_r_list) - 1])
     list_str_r += '|' + read_r_list[len(read_r_list) - 1]
 
-    read_file_ri = codecs.open('dictionary/แม่น้ำ.txt', 'r', 'utf-8')
+    read_file_ri = codecs.open('dictionary/dict_location/แม่น้ำ.txt', 'r', 'utf-8')
     read_ri = read_file_ri.read()
     read_ri_list = read_ri.split('\n')
     list_str_ri = '|'.join(read_ri_list[:len(read_ri_list) - 1])
     list_str_ri += '|' + read_ri_list[len(read_ri_list) - 1]
 
-    read_file_m = codecs.open('dictionary/ห้าง.txt', 'r', 'utf-8')
+    read_file_m = codecs.open('dictionary/dict_location/ห้าง.txt', 'r', 'utf-8')
     read_m = read_file_m.read()
     read_m_list = read_m.split('\n')
     list_str_m = '|'.join(read_m_list[:len(read_m_list) - 1])
     list_str_m += '|' + read_m_list[len(read_m_list) - 1]
 
-    read_file_h = codecs.open('dictionary/โรงบาล1.txt', 'r', 'utf-8')
+    read_file_h = codecs.open('dictionary/dict_location/โรงบาล1.txt', 'r', 'utf-8')
     read_h = read_file_h.read()
     read_h_list = read_h.split('\n')
     list_str_h = '|'.join(read_h_list[:len(read_h_list) - 1])
     list_str_h += '|' + read_h_list[len(read_h_list) - 1]
 
-    read_file_uni = codecs.open('dictionary/มหาลัย.txt', 'r', 'utf-8')
+    read_file_uni = codecs.open('dictionary/dict_location/มหาลัย.txt', 'r', 'utf-8')
     read_uni = read_file_uni.read()
     read_uni_list = read_uni.split('\n')
     list_str_uni = '|'.join(read_uni_list[:len(read_uni_list) - 1])
@@ -298,7 +298,7 @@ def tag_location(read_text):
 
         word_not_dict = matches_hos1
         # print(word_not_dict)
-        fobj = open("dictionary/โรงบาล1.txt", 'r', encoding='utf-8')
+        fobj = open("dictionary/dict_location/โรงบาล1.txt", 'r', encoding='utf-8')
         text = fobj.read().strip().split()
         fobj.close()
         # เงื่อนไข
@@ -310,7 +310,7 @@ def tag_location(read_text):
             # print("มีในdictแล้ว")
             continue
         else:
-            fobjw = open("dictionary/โรงบาล1.txt", 'a', encoding='utf-8')
+            fobjw = open("dictionary/dict_location/โรงบาล1.txt", 'a', encoding='utf-8')
             fobjw.write("\n" + s)
             # continue
             fobjw.close()
@@ -337,7 +337,7 @@ def tag_location(read_text):
 
         word_not_dict = matches_mall1
         # print(word_not_dict)
-        fobj = open("dictionary/ห้าง.txt", 'r', encoding='utf-8')
+        fobj = open("dictionary/dict_location/ห้าง.txt", 'r', encoding='utf-8')
         text = fobj.read().strip().split()
         fobj.close()
         # เงื่อนไข
@@ -348,7 +348,7 @@ def tag_location(read_text):
             # print("มีในdictแล้ว")
             continue
         else:
-            fobjw = open("dictionary/ห้าง.txt", 'a', encoding='utf-8')
+            fobjw = open("dictionary/dict_location/ห้าง.txt", 'a', encoding='utf-8')
             fobjw.write("\n" + s)
             continue
         fobjw.close()
@@ -373,7 +373,7 @@ def tag_location(read_text):
 
         word_not_dict = matches_uni1
         # print(word_not_dict)
-        fobj = open("dictionary/มหาลัย.txt", 'r', encoding='utf-8')
+        fobj = open("dictionary/dict_location/มหาลัย.txt", 'r', encoding='utf-8')
         text = fobj.read().strip().split()
         fobj.close()
         # เงื่อนไข
@@ -384,7 +384,7 @@ def tag_location(read_text):
             # print("มีในdictแล้ว")
             continue
         else:
-            fobjw = open("dictionary/มหาลัย.txt", 'a', encoding='utf-8')
+            fobjw = open("dictionary/dict_location/มหาลัย.txt", 'a', encoding='utf-8')
             fobjw.write("\n" + s)
             # continue
         fobjw.close()
@@ -572,13 +572,13 @@ def tag_person(read_text):
 
 
 def tag_action(read_text):
-    read_file_act1 = codecs.open('dictionary/กระทำ1.txt', 'r', 'utf8')
+    read_file_act1 = codecs.open('dictionary/dict_verb/กระทำ1.txt', 'r', 'utf8')
     read_act1 = read_file_act1.read()
     read_act1_list = read_act1.split('\n')
     list_str_act1 = '|'.join(read_act1_list[:len(read_act1_list) - 1])
     list_str_act1 += '|' + read_act1_list[len(read_act1_list) - 1]
 
-    read_file_act2 = codecs.open('dictionary/กระทำ2.txt', 'r', 'utf8')
+    read_file_act2 = codecs.open('dictionary/dict_verb/กระทำ2.txt', 'r', 'utf8')
     read_act2 = read_file_act2.read()
     read_act2_list = read_act2.split('\n')
     list_str_act2 = '|'.join(read_act2_list[:len(read_act2_list) - 1])
