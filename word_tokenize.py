@@ -24,10 +24,11 @@ def get_news(text):
         s2 = s1.replace("<br>", "<p>")
         s3 = s2.replace("<br/>", "<p>")
         s4 = s3.split("<p>")
-        for sub in s4 :
+        for sub in s4:
            if len(sub) > 0:
-            content.append(sub)
-            text = "\n".join(content)
+            if sub != ' ':
+                content.append(sub)
+                text = "\n".join(content)
 
     return text
 
