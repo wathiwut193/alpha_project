@@ -18,9 +18,17 @@ def get_news(text):
 
     paragraphs = html_parser.find_all("p")
     content = []
+    #print(paragraphs)
     for p in paragraphs:
-        content.append(p.getText())
-        text = "\n".join(content)
+        s1 = str(p).replace("</p>", "<p>")
+        s2 = s1.replace("<br>", "<p>")
+        s3 = s2.replace("<br/>", "<p>")
+        s4 = s3.split("<p>")
+        for sub in s4 :
+           if len(sub) > 0:
+            content.append(sub)
+            text = "\n".join(content)
+
     return text
 
 
@@ -57,7 +65,7 @@ def word_segment_identify_tag(text):
                     str_s += text[i]  # เก็บ str แถวสุดท้ายหลังจาก tag
             elif index_match % 2 != 0:
                 if match_i[index_match] == i:  # if match_i[index_match] = i
-                    index_match += index_match # ให้ทำการเพิ่มค่า index_match
+                    index_match += index_match  # ให้ทำการเพิ่มค่า index_match
                     str_tag += '\n'  # ใส่ช่องว่างให้ตัวสุดท้ายให้หลัง tag
                 else:
                     str_tag += text[i]  # else ให้เอาค่า str ตำแหน่ง i ไปใส่ใน str_tag
