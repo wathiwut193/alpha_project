@@ -10,12 +10,15 @@ import word_tokenize as wt
 import spell_checking as sc
 import rule
 import class_object as obj
+import pymongo
+from pymongo import MongoClient
 
 # - *- coding: utf- 8 - *-
 if __name__ == '__main__':
     # while (True):
     URL = input("Enter URL:")
     news = wt.get_news(URL)
+
     tag_date = tag.tag_date(news)
     tag_time = tag.tag_time(tag_date)
     tag_person = tag.tag_person(tag_time)
@@ -25,8 +28,15 @@ if __name__ == '__main__':
 
     result = tag_object.replace("|", "")
     result = sc.Autocorrection(result)
-
+    list_p = []
     list_2d = rule.rule_strat(result)
     for i in range(len(list_2d)):
         for j in range(len(list_2d[i])):
-            print(list_2d[i][j].__dict__)
+           list_p.append(list_2d[i][j].__dict__)
+
+    print(list_p)
+
+    client = MongoClient('localhost', 27017)
+    db = client.get_database("datanews")
+    news = db.news
+    news.insert_many(list_p)

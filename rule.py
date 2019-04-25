@@ -15,7 +15,7 @@ def rule_strat(str_text):
 
 
 def split_column(str_text):
-    list_text = str_text.split('\r\n')
+    list_text = str_text.split('\n')
     str_text = '&'.join(list_text)
     str_text = str_text.replace('>', '> ')
     str_text = str_text.replace('<', ' <')

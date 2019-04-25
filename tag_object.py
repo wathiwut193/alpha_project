@@ -356,7 +356,7 @@ def tag_location(read_text):
         count += 1
         # print (str('สถานที่ : ')+match.group())
         word = match.group(2) + match.group(3)
-        ###### ส่วนที่โค้ชเขียน#############
+
         url = 'https://www.google.com/search?q=' + str(word)
         data = requests.get(url)
         soup = BeautifulSoup(data.text, 'html.parser')
@@ -364,15 +364,15 @@ def tag_location(read_text):
 
         for i in x:
             word = i.text
-        # print (word)
+
         aof = ("แก้คำที่ใน tag <มหาวิทยาลัย_ผิด> เป็น : <มหาวิทยาลัย>" + word + "</มหาวิทยาลัย>")
-        # print(aof)
+
         regex_uni1 = (r"((มหาวิทยาลัย|มหาลัย))")
         matches_uni1 = regex.sub(regex_uni1, r'', word)
         read_text1 = matches_uni1
 
         word_not_dict = matches_uni1
-        # print(word_not_dict)
+
         fobj = open("dictionary/dict_location/มหาลัย.txt", 'r', encoding='utf-8')
         text = fobj.read().strip().split()
         fobj.close()
