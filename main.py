@@ -5,34 +5,28 @@ Created on Mon Apr 22 14:15:00 2019
 @author: wathi
 """
 
-
 import tag_object as tag
 import word_tokenize as wt
-#import spell_checking as sc
+import spell_checking as sc
 import rule
 import class_object as obj
 
 # - *- coding: utf- 8 - *-
 if __name__ == '__main__':
-    #while (True):
-        URL = input("Enter URL:")
-        news = wt.get_news(URL)
-        tag_date = tag.tag_date(news)
-        tag_time = tag.tag_time(tag_date)
-        tag_person = tag.tag_person(tag_time)
+    # while (True):
+    URL = input("Enter URL:")
+    news = wt.get_news(URL)
+    tag_date = tag.tag_date(news)
+    tag_time = tag.tag_time(tag_date)
+    tag_person = tag.tag_person(tag_time)
 
-        word_tokenize = wt.word_segment_identify_tag(tag_person)
-        tag_object = tag.tag_start(word_tokenize)
+    word_tokenize = wt.word_segment_identify_tag(tag_person)
+    tag_object = tag.tag_start(word_tokenize)
 
-        result = tag_object.replace("|","")
-        #result = sc.spell_checker(result)
+    result = tag_object.replace("|", "")
+    result = sc.Autocorrection(result)
 
-        list_2d = rule.rule_strat(result)
-        for i in range(len(list_2d)):
-            for j in range(len(list_2d[i])):
-                print(list_2d[i][j].__dict__)
-                #print(str(list_2d[i][j]))
-
-        #print(list_2d)
-
-        #print(result)
+    list_2d = rule.rule_strat(result)
+    for i in range(len(list_2d)):
+        for j in range(len(list_2d[i])):
+            print(list_2d[i][j].__dict__)

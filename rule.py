@@ -1,9 +1,11 @@
 import ngram
 import class_object as obj
 from pprint import pprint
+
 """
 function test rule search 
 """
+
 
 def rule_strat(str_text):
     list_text2d = split_column(str_text)
@@ -135,16 +137,16 @@ def tag_to_obj(list_tag_text):
                     check_r = False
 
                     while (check_r != True):
-                        #print(count_r)
+                        # print(count_r)
                         if country_tag.search(list_tag_text[i][count_r], threshold=1.0):
                             country = list_tag_text[i][count_r + 1]
                             check_location = True
                         elif province_tag.search(list_tag_text[i][count_r], threshold=1.0):
-                            #print(list_tag_text[i][count_r + 1])
+                            # print(list_tag_text[i][count_r + 1])
                             province = list_tag_text[i][count_r + 1]
                             check_location = True
                         elif amphoe_tag.search(list_tag_text[i][count_r], threshold=1.0):
-                            #print(list_tag_text[i][count_r + 1])
+                            # print(list_tag_text[i][count_r + 1])
                             amphoe = list_tag_text[i][count_r + 1]
                             check_location = True
                         elif area_tag.search(list_tag_text[i][count_r], threshold=1.0):
@@ -1704,7 +1706,7 @@ def count_result(str_text):
     print('------------------12------------------')
     print(count12)
 
-    # for i in range(len(count3)):
-    #    for j in range(len(count3[i])):
-    #        for k in range(len(count3[i][j])):
-    #            print(i,j,count3[i][j][k])
+# for i in range(len(count3)):
+#    for j in range(len(count3[i])):
+#        for k in range(len(count3[i][j])):
+#            print(i,j,count3[i][j][k])

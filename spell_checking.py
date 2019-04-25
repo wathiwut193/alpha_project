@@ -4,19 +4,6 @@ import json
 
 
 # -*- coding: utf-8 -*-
-
-def spell_checker(text_tag):
-    #text_tag_edit = province_fail(text_tag)
-    #text_tag_edit = province_amphoe_fail(text_tag)
-    #text_tag_edit = province_tambon_fail(text_tag)
-    #text_tag_edit = amphoe_tambon_fail(text_tag)
-    #text_tag_edit = province_amphoe_fail_tambon_fail(text_tag)
-    text_tag_edit = edit_distance1(text_tag)
-    text_tag_edit = Autocorrection(text_tag)
-
-    return text_tag_edit
-
-
 def get_json_data():
     with open('dictionary/json_dict/raw_database.json', 'r', encoding='utf8') as f:
         data = json.load(f)
