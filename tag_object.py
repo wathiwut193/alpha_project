@@ -571,24 +571,3 @@ def tag_person(read_text):
     return read_text
 
 
-def tag_action(read_text):
-    read_file_act1 = codecs.open('dictionary/dict_verb/กระทำ1.txt', 'r', 'utf8')
-    read_act1 = read_file_act1.read()
-    read_act1_list = read_act1.split('\n')
-    list_str_act1 = '|'.join(read_act1_list[:len(read_act1_list) - 1])
-    list_str_act1 += '|' + read_act1_list[len(read_act1_list) - 1]
-
-    read_file_act2 = codecs.open('dictionary/dict_verb/กระทำ2.txt', 'r', 'utf8')
-    read_act2 = read_file_act2.read()
-    read_act2_list = read_act2.split('\n')
-    list_str_act2 = '|'.join(read_act2_list[:len(read_act2_list) - 1])
-    list_str_act2 += '|' + read_act2_list[len(read_act2_list) - 1]
-    # tag action
-    regex_act1 = (r"((?!ยิงตัว|ฆ่าตัว)(" + list_str_act1 + "))")
-    regex_act2 = (r"((" + list_str_act2 + "))")
-    matches_act1 = regex.sub(regex_act1, r'<กระทำ1>\1</กระทำ1>', read_text)
-    read_text = matches_act1
-    matches_act2 = regex.sub(regex_act2, r'<กระทำ2>\1</กระทำ2>', read_text)
-    read_text = matches_act2
-
-    return read_text
