@@ -13,7 +13,9 @@
     คือ method ที่เอาไว้ใช้รัน function ทั้งหมด 
   * get_news
     คือ method ดึงค่ามาจากเว็บไซต์ข่าว thairath 
+   
   * word_segment
     คือ method ตัดคำ
+
   * word_segment_identify_tag 
     คือ method ถ้าเจอ <tag> text </tag> มองข้ามไป คือไม่ตัดคำที่อยู่ใน tag  
