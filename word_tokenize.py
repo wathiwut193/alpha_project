@@ -7,39 +7,59 @@ import regex
 # -*- coding: utf-8 -*-
 
 def run(text):
+    """
+    run all method in file
+    :param text:
+    :return: text with tag
+    """
     text = get_news(text)
     # text = word_segment(text)
     return text
 
 
 def get_news(text):
+    """
+    scraping content news from web thairath
+    :param text:
+    :return: text
+    """
     web_token = requests.get(text)
     html_parser = BeautifulSoup(web_token.text, 'html.parser')
 
     paragraphs = html_parser.find_all("p")
     content = []
-    #print(paragraphs)
+
     for p in paragraphs:
         s1 = str(p).replace("</p>", "<p>")
         s2 = s1.replace("<br>", "<p>")
         s3 = s2.replace("<br/>", "<p>")
         s4 = s3.split("<p>")
         for sub in s4:
-           if len(sub) > 0:
-            if sub != ' ':
-                content.append(sub)
-                text = "\n".join(content)
+            if len(sub) > 0:
+                if sub != ' ':
+                    content.append(sub)
+                    text = "\n".join(content)
 
     return text
 
 
 def word_segment(text):
+    """
+    word segmentation
+    :param text:
+    :return: text
+    """
     text = deepcut.tokenize(text, custom_dict="custom_dict/custom_dict.txt")
     text = "|".join(text)
     return text
 
 
 def word_segment_identify_tag(text):
+    """
+    function skip tag this function when they found <tag> function will skip <tag>
+    :param text:
+    :return:
+    """
     pattern = r"(<[^<]วันที่>[^<]*</[^<]วันที่>)"
     matches = regex.finditer(pattern, text, regex.MULTILINE)
     match_i = []
@@ -76,8 +96,6 @@ def word_segment_identify_tag(text):
     word_cut = deepcut.tokenize(str_s, custom_dict='dictionary/custom_dict/custom_dict.txt')
 
     ind = 0
-    # word_cut = [w.replace('=',tag_split[ind]) for w in word_cut]
-
     for i in range(len(word_cut)):
         if word_cut[i] == '=':
             word_cut[i] = tag_split[ind]

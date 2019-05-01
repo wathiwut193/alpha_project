@@ -5,6 +5,10 @@ import json
 
 # -*- coding: utf-8 -*-
 def get_json_data():
+    """
+
+    :return:
+    """
     with open('dictionary/json_dict/raw_database.json', 'r', encoding='utf8') as f:
         data = json.load(f)
     return data
@@ -224,13 +228,15 @@ def Autocorrection(x):
     if hospital_fail_matches:
         for i in hospital_fail_matches:
             res = find_result(dict_hospital(), i)
-            correct_x = regex.sub(r'<โรงพยาบาล_ผิด>' + i + '</โรงพยาบาล_ผิด>', '<โรงพยาบาล>' + res + '</โรงพยาบาล>', x)
+            correct_x = regex.sub(r'<โรงพยาบาล_ผิด>' + i + '</โรงพยาบาล_ผิด>',
+                                  '<โรงพยาบาล>' + "โรงพยาบาล" + res + '</โรงพยาบาล>', x)
             x = correct_x
 
     if country_fail_matches:
         for i in country_fail_matches:
             res = find_result(dict_country(), i)
-            correct_x = regex.sub(r'<ประเทศ_ผิด>' + i + '</ประเทศ_ผิด>', '<ประเทศ>' + res + '</ประเทศ>', x)
+            correct_x = regex.sub(r'<ประเทศ_ผิด>' + i + '</ประเทศ_ผิด>',
+                                  '<ประเทศ>' + "ประเทศ" + res + '</ประเทศ>', x)
             x = correct_x
 
     if store_fail_matches:
