@@ -22,7 +22,6 @@ if __name__ == '__main__':
     # print(news.split("\n"))
 
     # warning ! i found the problem with function get_news change to read file
-
     news_read = open("raw_data/input/news_2.txt", mode='r', encoding='utf-8')
     news = news_read.read()
 

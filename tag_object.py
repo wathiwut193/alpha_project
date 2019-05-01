@@ -75,6 +75,7 @@ def tag_date(read_text):
         "เมษายน|เมษา|พ\.ค\.|พฤษภาคม|พฤษภา|มิ\.ย\.|มิถุนายน|มิถุนา|ก\.ค\.|กรกฎาคม|กรกฎา|ส\.ค\.|สิงหาคม|สิงหา|ก\.ย\.|"
         "กันยายน|กันยา|ต\.ค\.|ตุลาคม|ตุลา|พ\.ย\.|พฤศจิกายน|พฤศจิกา|ธ\.ค\.|ธันวาคม|ธันวาคม)\s?(/)?(พ.ศ.|ค.ศ.|พศ|คศ)?\s?"
         "(\d\d\d\d|\d\d)?|([1-9]|[0-2][\d]|[3][0-1])\s?(/|-|\.)([0][\d]|[1][0-2])\s?(/|-|\.)(\d\d\d\d|\d\d))")
+
     matches_date = regex.sub(regex_date, r'<วัน>\1</วัน>', read_text)
     read_text = matches_date
 
@@ -87,6 +88,7 @@ def tag_action(read_text):
     :param read_text:
     :return: <กระทำ> verb </กระทำ>
     """
+    # read dictionary
     read_file_act1 = codecs.open('dictionary/dict_verb/กระทำ1.txt', 'r', 'utf8')
     read_act1 = read_file_act1.read()
     read_act1_list = read_act1.split('\n')
@@ -98,32 +100,59 @@ def tag_action(read_text):
     read_act2_list = read_act2.split('\n')
     list_str_act2 = '|'.join(read_act2_list[:len(read_act2_list) - 1])
     list_str_act2 += '|' + read_act2_list[len(read_act2_list) - 1]
-    # tag action
-    regex_act1 = (r"((?!ยิงตัว|ฆ่าตัว)(" + list_str_act1 + "))")
+
+    read_file_act3 = codecs.open('dictionary/dict_verb/กระทำ3.txt', 'r', 'utf8')
+    read_act3 = read_file_act3.read()
+    read_act3_list = read_act3.split('\n')
+    list_str_act3 = '|'.join(read_act3_list[:len(read_act3_list) - 1])
+    list_str_act3 += '|' + read_act3_list[len(read_act3_list) - 1]
+
+    read_file_act4 = codecs.open('dictionary/dict_verb/กระทำ4.txt', 'r', 'utf8')
+    read_act4 = read_file_act4.read()
+    read_act4_list = read_act4.split('\n')
+    list_str_act4 = '|'.join(read_act4_list[:len(read_act4_list) - 1])
+    list_str_act4 += '|' + read_act4_list[len(read_act4_list) - 1]
+
+    read_file_act5 = codecs.open('dictionary/dict_verb/กระทำ5.txt', 'r', 'utf8')
+    read_act5 = read_file_act5.read()
+    read_act5_list = read_act5.split('\n')
+    list_str_act5 = '|'.join(read_act5_list[:len(read_act5_list) - 1])
+    list_str_act5 += '|' + read_act5_list[len(read_act5_list) - 1]
+
+    read_file_act6 = codecs.open('dictionary/dict_verb/กระทำ6.txt', 'r', 'utf8')
+    read_act6 = read_file_act6.read()
+    read_act6_list = read_act6.split('\n')
+    list_str_act6 = '|'.join(read_act6_list[:len(read_act6_list) - 1])
+    list_str_act6 += '|' + read_act6_list[len(read_act6_list) - 1]
+
+    read_file_act8 = codecs.open('dictionary/dict_verb/กระทำ8.txt', 'r', 'utf8')
+    read_act8 = read_file_act8.read()
+    read_act8_list = read_act8.split('\n')
+    list_str_act8 = '|'.join(read_act8_list[:len(read_act8_list) - 1])
+    list_str_act8 += '|' + read_act8_list[len(read_act8_list) - 1]
+    # rule tag action
+    regex_act1 = (r"((?!ยิง\|?ตัว|ฆ่า\|?ตัว|ฟัน\|?กำไร)(" + list_str_act1 + "))")
     regex_act2 = (r"((" + list_str_act2 + "))")
+    regex_act3 = (r"((" + list_str_act3 + "))")
+    regex_act4 = (r"(((?!พาล|พานิช|พาย|พาหนะ)(?<!พก|พัด|สะ|วิ|ยาน|เฉ|บูร|อัม|อ|พิ)พา))")
+    regex_act5 = (r"((?!ให้การ\|?ปฏิเสธ)(" + list_str_act5 + "))")
+    regex_act6 = (r"((" + list_str_act6 + "))")
+    regex_act8 = (r"((" + list_str_act8 + "))")
+    # add tag
     matches_act1 = regex.sub(regex_act1, r'<กระทำ1>\1</กระทำ1>', read_text)
     read_text = matches_act1
     matches_act2 = regex.sub(regex_act2, r'<กระทำ2>\1</กระทำ2>', read_text)
     read_text = matches_act2
-    # ------- 3 - 8 --------
-    regex_action = (r'(ระบุ|เอาผิด|บุกรวบ|บุก|รวบ|เผยว่า|ดำเนินการคดี|ดำเนินคดี|ตามล่า|'
-                    'ลาดตระเวน|พบ|รับแจ้ง|ไล่|ปะทะ|เก็บ|ตรวจสอบ|แถลงการณ์|เปิดเผย|คุมตัว|คุม|ควบคุม|'
-                    'ตรวจค้น|สืบสวน|สอบสวน|ติดตาม|ลงพื้นที่|สอบปากคำ|นำแถลง|ยึดทรัพย์|นำตัว|รายงาน|'
-                    'วางแผน|ส่งฟ้อง|จับกุม|จับ|วิสามัญ)')
-    read_text = regex.sub(regex_action, r'<กระทำ3>\1</กระทำ3>', read_text)
-
-    regex_action = (r'(พา)')
-    read_text = regex.sub(regex_action, r'<กระทำ4>\1</กระทำ4>', read_text)
-
-    regex_action = (r'(ให้ปากคำ|ให้การ)')
-    read_text = regex.sub(regex_action, r'<กระทำ5>\1</กระทำ5>', read_text)
-
-    regex_action = (r'(มอบตัว|รับ(?!ส่ง|แจ้ง)|สารภาพ)')
-    read_text = regex.sub(regex_action, r'<กระทำ6>\1</กระทำ6>', read_text)
-
-    regex_action = (r'(แจ้งความ|ร้องทุกข์|ฟ้องร้อง|ร้องเรียน|แจ้งคดี)')
-    read_text = regex.sub(regex_action, r'<กระทำ8>\1</กระทำ8>', read_text)
-
+    matches_act3 = regex.sub(regex_act3, r'<กระทำ3>\1</กระทำ3>', read_text)
+    read_text = matches_act3
+    matches_act4 = regex.sub(regex_act4, r'<กระทำ4>\1</กระทำ4>', read_text)
+    read_text = matches_act4
+    matches_act5 = regex.sub(regex_act5, r'<กระทำ5>\1</กระทำ5>', read_text)
+    read_text = matches_act5
+    matches_act6 = regex.sub(regex_act6, r'<กระทำ6>\1</กระทำ6>', read_text)
+    read_text = matches_act6
+    matches_act8 = regex.sub(regex_act8, r'<กระทำ8>\1</กระทำ8>', read_text)
+    read_text = matches_act8
     return read_text
 
 
@@ -200,10 +229,11 @@ def tag_location(read_text):
     list_str_uni = '|'.join(read_uni_list[:len(read_uni_list) - 1])
     list_str_uni += '|' + read_uni_list[len(read_uni_list) - 1]
 
-    regex_province2 = (r"(((?<!ผว|\.)จ\.|จังหวัด|(?<!\.)จว.)\s?(" + list_str_p + "){e<=1}|(กรุงเทพ|กทม\.))")
+    regex_province2 = (
+            r"(((?<!ผว|\.)จ\.|จังหวัด|(?<!\.)จว.)\s?(" + list_str_p + "){e<=1}|(กรุงเทพมหานคร|กรุงเทพ|กทม\.))")
 
     regex_province = (
-            r"<จังหวัด_ผิด>(((?<!\.)จ\.|จังหวัด|(?<!\.)จว.)\s?(" + list_str_p + ")|(กรุงเทพ|กทม\.))</จังหวัด_ผิด>")
+            r"<จังหวัด_ผิด>(((?<!\.)จ\.|จังหวัด|(?<!\.)จว.)\s?(" + list_str_p + ")|(กรุงเทพมหานคร|กรุงเทพ|กทม\.))</จังหวัด_ผิด>")
 
     regex_country2 = (r"((ประเทศ)\s?(" + list_str_c + "){e<=1})")
 
@@ -325,7 +355,6 @@ def tag_location(read_text):
 
         for i in x:
             word = i.text.strip('\"')
-
 
         aof = ("แก้คำที่ใน tag <โรงพยาบาล_ผิด> เป็น: <โรงพยาบาล>" + word + "</โรงพยาบาล>")
         # print(aof)
@@ -527,7 +556,6 @@ def tag_person(read_text):
 
         list_name = []
         for matchNum, match in enumerate(read_text2):
-
             list_name.append(match.group(1))
 
         return list_name
@@ -538,9 +566,7 @@ def tag_person(read_text):
 
     arr = np.unique(arr)
 
-
     list_name = arr.tolist()
-
 
     list_name2 = []
 
@@ -559,7 +585,6 @@ def tag_person(read_text):
                                 if len(list_name2[i][j]) < len(list_name2[k + 1][l]):
                                     index_reiteration.append(k + 1)
                                     # print(k+1)
-
 
     index_re = np.asarray(index_reiteration)
     index_re = np.unique(index_re)
@@ -619,9 +644,7 @@ def tag_person(read_text):
         regex_name2 = (r"((?<!<คน2>)(" + str_name + "))")
         matches_name2 = regex.sub(regex_name2, r'<คน>\1</คน>', read_text)
         read_text = matches_name2
-        print(read_text)
-    else:
-        print(read_text)
+
     return read_text
 
 
@@ -631,10 +654,13 @@ def tag_adverb(read_text):
     :param read_text:
     :return: <คำบ่งบอก> </คำบ่งบอก>
     """
-    regex_specify = (r"(หลังถูก|ถูก|โดน)")
-    read_text = regex.sub(regex_specify, r'<คำบ่งบอก>\1</คำบ่งบอก>', read_text)
+    regex_specify1 = (r"((หลังถูก|(?<!ราคา)ถูก|โดน))")
 
-    regex_specify = (r"(คือ|เป็น)")
-    read_text = regex.sub(regex_specify, r'<คำบ่งบอก2>\1</คำบ่งบอก2>', read_text)
+    regex_specify2 = (
+        r"((?!เป็นอย่าง|เป็นต้น|เป็นอยู่|เป็นไป|เป็นกอง|เป็นประจำ|เป็นปกติ|เป็นเสียง|เป็นกอบ|เป็นกำ|เป็นแบบ|เป็นเรื่อง|เป็นแนว|เป็นที่|เป็นจังหวะ)(คือ|(?<!จำ|ให้|ความ|มา|อย่าง|เคย|กลาย|ว่า|ดูแล|ได้|ไม่|อัน|นั้น)เป็น))")
 
+    matches_specify1 = regex.sub(regex_specify1, r'<คำบ่งบอก>\1</คำบ่งบอก>', read_text)
+    read_text = matches_specify1
+    matches_specify2 = regex.sub(regex_specify2, r'<คำบ่งบอก2>\1</คำบ่งบอก2>', read_text)
+    read_text = matches_specify2
     return read_text
