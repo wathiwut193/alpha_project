@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dab9f81d-e041-4f7d-9d6d-50aa838e95c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news13.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news14.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news15.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news16.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news17.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news18.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news19.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news20.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news21.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news22.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news23.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news24.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news25.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news26.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news27.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news28.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news29.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news30.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news31.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news32.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dictionary/dict_location/จังหวัด.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/dict_location/จังหวัด.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dictionary/dict_location/ตำบล.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/dict_location/ตำบล.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raw_data/input/news_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/raw_data/input/news_2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/rule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tag_object.py" beforeDir="false" afterPath="$PROJECT_DIR$/tag_object.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_tokenize.py" beforeDir="false" afterPath="$PROJECT_DIR$/word_tokenize.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>tag_person</find>
+      <find>read_text</find>
+      <find>28 พฤศจิกายน</find>
+      <find>fobj</find>
+      <find>ไปตรวจสอบ</find>
+      <find>p</find>
+      <find>def tag_person</find>
+      <find>def tag_location</find>
+      <find>def tag_date</find>
+      <find>wrong</find>
+      <find>โรงพยาบาล</find>
+      <find>tag_date</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/dictionary/มหาลัย.txt" />
+        <option value="$USER_HOME$/Downloads/listword_cut.py" />
+        <option value="$PROJECT_DIR$/requirement.txt" />
+        <option value="$PROJECT_DIR$/class_object.py" />
+        <option value="$PROJECT_DIR$/database.py" />
+        <option value="$PROJECT_DIR$/web_scraping.py" />
+        <option value="$PROJECT_DIR$/raw_data/input/news1" />
+        <option value="$PROJECT_DIR$/spell_checking.py" />
+        <option value="$PROJECT_DIR$/raw_data/input/news_2.txt" />
+        <option value="$PROJECT_DIR$/rule.py" />
+        <option value="$PROJECT_DIR$/tag_object.py" />
+        <option value="$PROJECT_DIR$/word_tokenize.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/dictionary/dict_verb/กระทำ3.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="width" value="1935" />
+    <option name="height" value="1090" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="alpha_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alpha_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="alpha_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alpha_project" type="462c0819:PsiDirectoryNode" />
+              <item name="raw_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="alpha_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alpha_project" type="462c0819:PsiDirectoryNode" />
+              <item name="raw_data" type="462c0819:PsiDirectoryNode" />
+              <item name="input_html" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wathi\PycharmProjects\alpha_project\dictionary\dict_location" />
+      <recent name="C:\Users\wathi\PycharmProjects\alpha_project\dictionary\dict_verb" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wathi\PycharmProjects\alpha_project\dictionary\dict_verb" />
+      <recent name="C:\Users\wathi\PycharmProjects\alpha_project\dictionary\json_dict" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="alpha_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="alpha_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="alpha_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.database" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dab9f81d-e041-4f7d-9d6d-50aa838e95c3" name="Default Changelist" comment="" />
+      <created>1555999004291</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555999004291</updated>
+      <workItem from="1555999009737" duration="15143000" />
+      <workItem from="1556041179883" duration="1705000" />
+      <workItem from="1556076195375" duration="7604000" />
+      <workItem from="1556088974437" duration="4294000" />
+      <workItem from="1556093424795" duration="8711000" />
+      <workItem from="1556104143965" duration="11564000" />
+      <workItem from="1556122194062" duration="223000" />
+      <workItem from="1556159356398" duration="654000" />
+      <workItem from="1556167639386" duration="15642000" />
+      <workItem from="1556189117200" duration="531000" />
+      <workItem from="1556191065469" duration="73000" />
+      <workItem from="1556192129080" duration="599000" />
+      <workItem from="1556466370756" duration="607000" />
+      <workItem from="1556519778052" duration="7524000" />
+      <workItem from="1556551452313" duration="1024000" />
+      <workItem from="1556598545798" duration="17195000" />
+      <workItem from="1556680029274" duration="1650000" />
+      <workItem from="1556684798785" duration="4131000" />
+      <workItem from="1556698702681" duration="6090000" />
+      <workItem from="1556711743959" duration="612000" />
+      <workItem from="1556717847661" duration="1651000" />
+      <workItem from="1556780737757" duration="1533000" />
+      <workItem from="1556785062617" duration="3580000" />
+      <workItem from="1556851039923" duration="1732000" />
+      <workItem from="1556860852078" duration="8325000" />
+      <workItem from="1556873180180" duration="2368000" />
+      <workItem from="1556884221906" duration="3734000" />
+    </task>
+    <task id="LOCAL-00001" summary="backup code class object">
+      <created>1556001859960</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556001859960</updated>
+    </task>
+    <task id="LOCAL-00002" summary="before pass to jame 23/4/2562">
+      <created>1556017335992</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556017335992</updated>
+    </task>
+    <task id="LOCAL-00003" summary="edit tag to &lt;thai language&gt; and and add spell checker function">
+      <created>1556087790677</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556087790677</updated>
+    </task>
+    <task id="LOCAL-00004" summary="spell function not complete and change structure program">
+      <created>1556093613188</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556093613188</updated>
+    </task>
+    <task id="LOCAL-00005" summary="spell function not complete and change structure program">
+      <created>1556093931190</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556093931190</updated>
+    </task>
+    <task id="LOCAL-00006" summary="spell check add dict json and renovate program structure">
+      <created>1556095965752</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556095965752</updated>
+    </task>
+    <task id="LOCAL-00007" summary="aof come edit">
+      <created>1556102299047</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1556102299047</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add word segmentation function">
+      <created>1556108081573</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1556108081573</updated>
+    </task>
+    <task id="LOCAL-00009" summary="spell check edit and edit tag add new word to dict">
+      <created>1556113589715</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1556113589716</updated>
+    </task>
+    <task id="LOCAL-00010" summary="combine with function test rule">
+      <created>1556116194165</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1556116194165</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add function insert document to db">
+      <created>1556176245659</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1556176245659</updated>
+    </task>
+    <task id="LOCAL-00012" summary="edit function get_news by aj.non">
+      <created>1556186104325</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1556186104325</updated>
+    </task>
+    <task id="LOCAL-00013" summary="edit function get_news by aj.non">
+      <created>1556186432764</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1556186432764</updated>
+    </task>
+    <task id="LOCAL-00014" summary="edit function get_news by aj.non and Jame edit">
+      <created>1556191104421</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1556191104421</updated>
+    </task>
+    <task id="LOCAL-00015" summary="delete function tag action">
+      <created>1556466431963</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1556466431964</updated>
+    </task>
+    <task id="LOCAL-00016" summary="edit 1/5/2019">
+      <created>1556688422605</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1556688422605</updated>
+    </task>
+    <task id="LOCAL-00017" summary="edit 1/5/2019 new push">
+      <created>1556688530073</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1556688530073</updated>
+    </task>
+    <task id="LOCAL-00018" summary="edit 1/5/2019 timestamp 5.02 pm">
+      <created>1556704981752</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1556704981752</updated>
+    </task>
+    <task id="LOCAL-00019" summary="edit 1/5/2019 timestamp 8.37 pm">
+      <created>1556717881162</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1556717881162</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="128499000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16152816" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32797858" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22891566" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39875388" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32917964" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.25441328" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3271028" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32931727" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" x="0" y="0" width="314" height="716" id="Documentation" order="4" side_tool="true" weight="0.20710456" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.124200426" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2741433" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39875388" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32950193" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32950193" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32917964" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32950193" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" x="0" y="0" width="314" height="716" id="Documentation" order="4" side_tool="true" weight="0.32889125" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="backup code class object" />
+    <MESSAGE value="before pass to jame 23/4/2562" />
+    <MESSAGE value="edit tag to &lt;thai language&gt; and and add spell checker function" />
+    <MESSAGE value="spell function not complete and change structure program" />
+    <MESSAGE value="spell check add dict json and renovate program structure" />
+    <MESSAGE value="aof come edit" />
+    <MESSAGE value="add word segmentation function" />
+    <MESSAGE value="spell check edit and edit tag add new word to dict" />
+    <MESSAGE value="combine with function test rule" />
+    <MESSAGE value="add function insert document to db" />
+    <MESSAGE value="edit function get_news by aj.non" />
+    <MESSAGE value="edit function get_news by aj.non and Jame edit" />
+    <MESSAGE value="delete function tag action" />
+    <MESSAGE value="edit 1/5/2019" />
+    <MESSAGE value="edit 1/5/2019 new push" />
+    <MESSAGE value="edit 1/5/2019 timestamp 5.02 pm" />
+    <MESSAGE value="edit 1/5/2019 timestamp 8.37 pm" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit 1/5/2019 timestamp 8.37 pm" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/alpha_project$main.coverage" NAME="main Coverage Results" MODIFIED="1556887975593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dictionary/dict_location/มหาลัย.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dictionary/dict_location/ตำบล.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/listword_cut.py" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="23">
+            <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirement.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dictionary/json_dict/raw_database.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dictionary/dict_verb/กระทำ1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/allplace.py" />
+    <entry file="file://$PROJECT_DIR$/dictionary/dict_location/แขวง.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/rule.py" />
+    <entry file="file://$USER_HOME$/Downloads/class_object.py" />
+    <entry file="file://$PROJECT_DIR$/web_scraping.py" />
+    <entry file="file://$PROJECT_DIR$/database.py" />
+    <entry file="file://$USER_HOME$/Downloads/tag_object.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="103" column="72" selection-start-line="87" selection-start-column="4" selection-end-line="103" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raw_data/input/news1" />
+    <entry file="file://$PROJECT_DIR$/raw_data/input/news1.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/input/news_2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML_data/news1" />
+    <entry file="file://$PROJECT_DIR$/dictionary/custom_dict/custom_dict.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-759" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dictionary/dict_verb/กระทำ3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spell_checking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2103">
+          <caret line="243" column="46" selection-start-line="243" selection-start-column="46" selection-end-line="243" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dictionary/dict_location/โรงบาล1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="361" selection-start-line="361" selection-end-line="361" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_object.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="98" column="36" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tag_object.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_tokenize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="138" column="19" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

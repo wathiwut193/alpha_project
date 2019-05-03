@@ -12,23 +12,20 @@ def run(text):
     :param text:
     :return: text with tag
     """
-    text = get_news(text)
+    text = get_text_news(text)
+    text = get_html(text)
     # text = word_segment(text)
     return text
 
 
-def get_news(text):
+def get_text_news(text):
     """
     scraping content news from web thairath
     :param text:
     :return: text
     """
-    web_token = requests.get(text)
-    html_parser = BeautifulSoup(web_token.text, 'html.parser')
-
-    paragraphs = html_parser.find_all("p")
+    paragraphs = text.find_all("p")
     content = []
-
     for p in paragraphs:
         s1 = str(p).replace("</p>", "<p>")
         s2 = s1.replace("<br>", "<p>")
@@ -39,8 +36,14 @@ def get_news(text):
                 if sub != ' ':
                     content.append(sub)
                     text = "\n".join(content)
-
     return text
+
+
+def get_html(url):
+    web_token = requests.get(url)
+    html_parser = BeautifulSoup(web_token.text, 'html.parser')
+    print(html_parser)
+    return html_parser
 
 
 def word_segment(text):
@@ -108,3 +111,33 @@ def word_segment_identify_tag(text):
             word = ('|'.join(word_cut))
 
     return word
+
+
+def read_file_get_news(file_name):
+    with open("raw_data/input_html/" + str(file_name), 'r', encoding='utf-8') as rf:
+        read_html = rf.read()
+        soup = BeautifulSoup(read_html, "lxml")
+        soup.prettify()
+        paragraphs = soup.find_all("p")
+        content = []
+        for p in paragraphs:
+            s1 = str(p).replace("</p>", "<p>")
+            s2 = s1.replace("<br>", "<p>")
+            s3 = s2.replace("<br/>", "<p>")
+            s4 = s3.split("<p>")
+            for sub in s4:
+                if len(sub) > 0:
+                    if sub != ' ':
+                        content.append(sub)
+                        text = "\n".join(content)
+    rf.close()
+    return text
+
+
+def remove_stopword():
+    """
+    remove stopword
+    :return:
+    """
+    pass
+    return
