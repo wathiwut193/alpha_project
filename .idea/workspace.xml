@@ -2,52 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dab9f81d-e041-4f7d-9d6d-50aa838e95c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news14.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news15.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news16.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news17.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news18.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news19.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news20.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news22.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news23.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news24.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news25.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news26.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news27.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news28.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news29.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news30.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news31.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news32.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw_data/input_html/news9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dictionary/dict_location/จังหวัด.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/dict_location/จังหวัด.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dictionary/dict_location/ตำบล.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/dict_location/ตำบล.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dictionary/custom_dict/custom_dict.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/custom_dict/custom_dict.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary/dict_verb/กระทำ8.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw_data/input/news_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/raw_data/input/news_2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/rule.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tag_object.py" beforeDir="false" afterPath="$PROJECT_DIR$/tag_object.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/word_tokenize.py" beforeDir="false" afterPath="$PROJECT_DIR$/word_tokenize.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +15,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="41" column="39" lean-forward="true" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+              <folding>
+                <element signature="e#25#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tag_object.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="650" column="9" lean-forward="true" selection-start-line="650" selection-start-column="9" selection-end-line="650" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -97,17 +81,18 @@
         <option value="$PROJECT_DIR$/spell_checking.py" />
         <option value="$PROJECT_DIR$/raw_data/input/news_2.txt" />
         <option value="$PROJECT_DIR$/rule.py" />
-        <option value="$PROJECT_DIR$/tag_object.py" />
         <option value="$PROJECT_DIR$/word_tokenize.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/dictionary/dict_verb/กระทำ3.txt" />
+        <option value="$PROJECT_DIR$/tag_object.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="1935" />
-    <option name="height" value="1090" />
+    <option name="x" value="313" />
+    <option name="y" value="76" />
+    <option name="width" value="1534" />
+    <option name="height" value="865" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -120,6 +105,17 @@
             <path>
               <item name="alpha_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="alpha_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="alpha_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alpha_project" type="462c0819:PsiDirectoryNode" />
+              <item name="dictionary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="alpha_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alpha_project" type="462c0819:PsiDirectoryNode" />
+              <item name="dictionary" type="462c0819:PsiDirectoryNode" />
+              <item name="dict_verb" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="alpha_project" type="b2602c69:ProjectViewProjectNode" />
@@ -280,7 +276,10 @@
       <workItem from="1556851039923" duration="1732000" />
       <workItem from="1556860852078" duration="8325000" />
       <workItem from="1556873180180" duration="2368000" />
-      <workItem from="1556884221906" duration="3734000" />
+      <workItem from="1556884221906" duration="3817000" />
+      <workItem from="1556947628975" duration="78000" />
+      <workItem from="1557132045065" duration="274000" />
+      <workItem from="1557134041235" duration="775000" />
     </task>
     <task id="LOCAL-00001" summary="backup code class object">
       <created>1556001859960</created>
@@ -415,11 +414,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556717881162</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="edit read data from file html 3/5/2019">
+      <created>1556888279831</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1556888279831</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128499000" />
+    <option name="totallyTimeSpent" value="129709000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -431,14 +437,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16152816" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13270777" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32797858" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22891566" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33065596" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39875388" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -453,7 +460,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" x="0" y="0" width="314" height="716" id="Documentation" order="4" side_tool="true" weight="0.20710456" />
+      <window_info anchor="right" x="0" y="0" width="314" height="716" id="Documentation" order="4" side_tool="true" visible="true" weight="0.16420911" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
     <layout-to-restore>
@@ -542,10 +549,11 @@
     <MESSAGE value="edit 1/5/2019 new push" />
     <MESSAGE value="edit 1/5/2019 timestamp 5.02 pm" />
     <MESSAGE value="edit 1/5/2019 timestamp 8.37 pm" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit 1/5/2019 timestamp 8.37 pm" />
+    <MESSAGE value="edit read data from file html 3/5/2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit read data from file html 3/5/2019" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/alpha_project$main.coverage" NAME="main Coverage Results" MODIFIED="1556887975593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/alpha_project$main.coverage" NAME="main Coverage Results" MODIFIED="1557135027834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dictionary/dict_location/มหาลัย.txt">
@@ -563,16 +571,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/listword_cut.py" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="23">
-            <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirement.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -631,13 +629,6 @@
         <state relative-caret-position="-759" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dictionary/dict_verb/กระทำ3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spell_checking.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2103">
@@ -672,16 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tag_object.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/word_tokenize.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
@@ -692,10 +673,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="483">
+            <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dictionary/dict_verb/กระทำ3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tag_object.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="650" column="9" lean-forward="true" selection-start-line="650" selection-start-column="9" selection-end-line="650" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="352">
+          <caret line="41" column="39" lean-forward="true" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
           <folding>
             <element signature="e#25#49#0" expanded="true" />
           </folding>

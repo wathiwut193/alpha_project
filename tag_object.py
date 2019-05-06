@@ -15,8 +15,8 @@ def tag_start(read_text):
     # read_text = tag_time(read_text)
     # read_text = tag_date(read_text)
     read_text = tag_action(read_text)
-    # read_text = tag_adverb(read_text)
-    read_text = tag_location(read_text)
+    read_text = tag_adverb(read_text)
+    #read_text = tag_location(read_text)
     # read_text = tag_person(read_text)
     # read_text = tag_......
     return read_text

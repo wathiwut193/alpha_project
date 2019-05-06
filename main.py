@@ -25,12 +25,15 @@ if __name__ == '__main__':
     tag_date = tag.tag_date(news)
     tag_time = tag.tag_time(tag_date)
     tag_person = tag.tag_person(tag_time)
+    tag_location = tag.tag_location(tag_person)
+
     """
     word token and tag action and location
     """
-    word_tokenize = wt.word_segment_identify_tag(tag_person)
-    tag_object = tag.tag_start(word_tokenize)
-    result = tag_object.replace("|", "")
+    word_tokenize = wt.word_segment_identify_tag(tag_location)
+    tag_action = tag.tag_action(word_tokenize)
+    #tag_object = tag.tag_secondary_action_1(tag_action)
+    result = tag_action.replace("|", "")
     """
     edit wrong word from <fail>
     """
