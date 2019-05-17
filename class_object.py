@@ -11,10 +11,13 @@ class Person:
         self.lastname = lastname
 
         if (firstname == 'คนร้าย' or firstname == 'ผู้ร้าย' or firstname == 'ผู้ต้องหา'
-                or firstname == 'ผู้ก่อเหตุ' or firstname == 'โจรใต้' or firstname == 'โจร'):
+                or firstname == 'ผู้ก่อเหตุ' or firstname == 'โจรใต้' or firstname == 'โจร'
+                or firstname == 'มือปืน'):
             self.status = 'คนร้าย'
         elif (firstname == 'ผู้เสียหาย' or firstname == 'ผู้ตาย' or firstname == 'ผู้เสียชีวิต'):
             self.status = 'คนเสียหาย'
+        elif (firstname == 'ตำรวจ' or firstname == 'จนท.'):
+            self.status = 'เจ้าหน้าที่'
         else:
             self.status = status
 
@@ -62,6 +65,7 @@ class Verb:
             return 'คำบ่งบอก' + self.number
 
 
+# bug
 class Date:
 
     def __init__(self, date):
@@ -71,6 +75,7 @@ class Date:
         return 'วัน'
 
 
+# bug
 class Time:
 
     def __init__(self, time):
@@ -81,22 +86,37 @@ class Time:
 
 
 class Location:
+    split_location = None
 
     def __init__(self, country='', province='', amphoe='', area=''
                  , tambon='', district='', road='', river='', place='', mall=''
                  , hospital='', university=''):
-        self.country = country
-        self.province = province
-        self.amphoe = amphoe
-        self.area = area
-        self.tambon = tambon
-        self.district = district
-        self.road = road
-        self.river = river
+        self.country = country.replace('ประเทศ', '')
+        self.province = province.replace('จังหวัด', '').replace('จ.', '')
+        self.amphoe = amphoe.replace('อำเภอ', '').replace('อ.', '')
+        self.area = area.replace('เขต', '')
+        self.tambon = tambon.replace('ตำบล', '').replace('ต.', '')
+        self.district = district.replace('แขวง', '')
+        self.road = road.replace('ถนน', '').replace('ถ.', '')
+        self.river = river.replace('แม่น้ำ', '')
         self.place = place
-        self.mall = mall
-        self.hospital = hospital
-        self.university = university
+        self.mall = mall.replace('ห้าง', '')
+        self.hospital = hospital.replace('โรงพยาบาล', '')
+        self.university = university.replace('มหาวิทยาลัย', '')
+        self.split_location = {
+            'ประเทศ': self.country,
+            'จังหวัด': self.province,
+            'อำเภอ': self.amphoe,
+            'เขต': self.area,
+            'ตำบล': self.tambon,
+            'แขวง': self.district,
+            'ถนน': self.road,
+            'แม่น้ำ': self.river,
+            'สถานที่': self.place,
+            'ห้าง': self.mall,
+            'โรงพยาบาล': self.hospital,
+            'มหาวิทยาลัย': self.university
+        }
 
     def __str__(self):
         return 'สถานที่'
