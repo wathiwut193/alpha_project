@@ -33,10 +33,7 @@ class Person:
     @status.setter
     def status(self, status):  # setter
         if status in ['คนร้าย', 'คน', 'คนเสียหาย', 'เจ้าหน้าที่']:
-            if self.firstname == 'คนร้าย':
-                self.__status = 'คนร้าย'
-            else:
-                self.__status = status
+            self.__status = status
         else:
             raise ValueError('ไม่มีสถานะคนในเซตข้อมูล')
 
@@ -120,3 +117,62 @@ class Location:
 
     def __str__(self):
         return 'สถานที่'
+
+
+class Result:
+
+    def __init__(self,villain,action,sufferer='',location='',datetime='',title='',content='',link=''):
+        # self.datetime = datetime
+        self.Title = title
+        self.Content = content
+        self.DateTime = datetime
+        self.Villain = villain
+        self.Action = action
+        self.Sufferer = sufferer
+        self.Location = location
+        self.Link = link
+
+    # Date = Date
+    # @property
+    # def date(self):  # getter
+    #     return self.__date
+
+    @property
+    def title(self):  # getter
+        return self.__Title
+
+    @title.setter
+    def title(self, title):  # setter
+        self.__Title = title
+
+    @property
+    def content(self):  # getter
+        return self.__Content
+
+    @content.setter
+    def content(self, content):  # setter
+        self.__Content = content
+
+    @property
+    def date(self):  # getter
+        return self.__Date
+
+    @date.setter
+    def date(self, date):  # setter
+        self.__Date = date
+
+    @property
+    def time(self):  # getter
+        return self.__Time
+
+    @time.setter
+    def time(self, time):  # setter
+        self.__Time = time
+
+    @property
+    def link(self):  # getter
+        return self.__Link
+
+    @link.setter
+    def link(self, link):  # setter
+        self.__Link = link
