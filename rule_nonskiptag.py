@@ -70,17 +70,14 @@ def rule1(list_tag_2d):
                         list_rule.append(list_tag_2d[i][j - 1])
                         # กระทำ (ผิด)
                         list_rule.append(list_tag_2d[i][j])
-
                         if j != len(list_tag_2d[i]) - 1:
                             count_r = j
                             check_r = False
-
                             while (check_r != True):
                                 if count_r == len(list_tag_2d[i]) - 1:
                                     count_r += 0
                                 else:
                                     count_r += 1
-
                                 if count_r == len(list_tag_2d[i]) - 1:
                                     if str(list_tag_2d[i][count_r]) != 'กระทำ1':
                                         # print(check_r)
@@ -93,13 +90,10 @@ def rule1(list_tag_2d):
                                         check_r = True
                                 else:
                                     if str(list_tag_2d[i][count_r]) == 'กระทำ1':
-                                        # print('r',i,j,count_r,str(list_tag_2d[i][count_r]))
                                         # กระทำ (ผิด)*
                                         list_rule.append(list_tag_2d[i][count_r])
-
                                     elif str(list_tag_2d[i][count_r]) != 'กระทำ1':
                                         check_r = True
-
                         tuple_rule = tuple(list_rule)
                         result_rule[i].append(tuple_rule)
 
@@ -115,11 +109,9 @@ def rule1(list_tag_2d):
                         list_rule.append(list_tag_2d[i][j - 1])
                         # กระทำ (ผิด)
                         list_rule.append(list_tag_2d[i][j])
-
                         if j != len(list_tag_2d[i]) - 1:
                             count_r = j
                             check_r = False
-
                             while (check_r != True):
 
                                 if count_r == len(list_tag_2d[i]) - 1:
@@ -139,13 +131,10 @@ def rule1(list_tag_2d):
                                         check_r = True
                                 else:
                                     if str(list_tag_2d[i][count_r]) == 'กระทำ2':
-                                        # print('r',i,j,count_r,str(list_tag_2d[i][count_r]))
                                         # กระทำ (ผิด)*
                                         list_rule.append(list_tag_2d[i][count_r])
-
                                     elif str(list_tag_2d[i][count_r]) != 'กระทำ2':
                                         check_r = True
-
                         tuple_rule = tuple(list_rule)
                         result_rule[i].append(tuple_rule)
 

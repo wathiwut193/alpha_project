@@ -169,38 +169,38 @@ def get_datetime_from_news(file_name):
         paragraphs = soup.find_all("span")
         # print(paragraphs)
         regex_date = (
-        r"(([1-9]|[0-2][\d]|[3][0-1])\s?(/)?(ม\.ค\.|มกราคม|มกรา|ก\.พ\.|กุมภาพันธ์|กุมภา|มี\.ค\.|มีนาคม|มีนา|เม\.ย\.|"
-        "เมษายน|เมษา|พ\.ค\.|พฤษภาคม|พฤษภา|มิ\.ย\.|มิถุนายน|มิถุนา|ก\.ค\.|กรกฎาคม|กรกฎา|ส\.ค\.|สิงหาคม|สิงหา|ก\.ย\.|"
-        "กันยายน|กันยา|ต\.ค\.|ตุลาคม|ตุลา|พ\.ย\.|พฤศจิกายน|พฤศจิกา|ธ\.ค\.|ธันวาคม|ธันวาคม)\s?(/)?(พ.ศ.|ค.ศ.|พศ|คศ)?\s?"
-        "(\d\d\d\d|\d\d)?|([1-9]|[0-2][\d]|[3][0-1])\s?(/|-|\.)\s?([0][\d]|[1][0-2])\s?(/|-|\.)\s?(\d\d\d\d|\d\d))")
-        
+            r"(([1-9]|[0-2][\d]|[3][0-1])\s?(/)?(ม\.ค\.|มกราคม|มกรา|ก\.พ\.|กุมภาพันธ์|กุมภา|มี\.ค\.|มีนาคม|มีนา|เม\.ย\.|"
+            "เมษายน|เมษา|พ\.ค\.|พฤษภาคม|พฤษภา|มิ\.ย\.|มิถุนายน|มิถุนา|ก\.ค\.|กรกฎาคม|กรกฎา|ส\.ค\.|สิงหาคม|สิงหา|ก\.ย\.|"
+            "กันยายน|กันยา|ต\.ค\.|ตุลาคม|ตุลา|พ\.ย\.|พฤศจิกายน|พฤศจิกา|ธ\.ค\.|ธันวาคม|ธันวาคม)\s?(/)?(พ.ศ.|ค.ศ.|พศ|คศ)?\s?"
+            "(\d\d\d\d|\d\d)?|([1-9]|[0-2][\d]|[3][0-1])\s?(/|-|\.)\s?([0][\d]|[1][0-2])\s?(/|-|\.)\s?(\d\d\d\d|\d\d))")
+
         regex_time = r"(([0-1][\d]|[2][0-4])\s?(:|.)\s?([0-5][\d])\s?(นาฬิกา|น\.|น))"
 
         date = ''
         time = ''
         for p in paragraphs:
             s1 = str(p)
-            match_date = regex.search(regex_date,s1)
+            match_date = regex.search(regex_date, s1)
             if match_date != None:
                 # print(m.group(1))
                 date = match_date.group(1)
-            match_time = regex.search(regex_time,s1)
+            match_time = regex.search(regex_time, s1)
             if match_time != None:
                 time = match_time.group(1)
-            
-        date = date.replace(' ','')
-        date = (date.replace('ม.ค.','-01-').replace('ก.พ.','-02-').replace('มี.ค.','-03-')
-        .replace('เม.ย.','-04-').replace('พ.ค.','-05-').replace('มิ.ย.','-06-').replace('ก.ค.','-07-')
-        .replace('ส.ค.','-08-').replace('ก.ย.','-09-').replace('ต.ค.','-10-').replace('พ.ย.','-11-')
-        .replace('ธ.ค.','-12-'))
-        time = time.replace('น.','').replace('น','').replace('นาฬิกา','').replace(' ','')
+
+        date = date.replace(' ', '')
+        date = (date.replace('ม.ค.', '-01-').replace('ก.พ.', '-02-').replace('มี.ค.', '-03-')
+                .replace('เม.ย.', '-04-').replace('พ.ค.', '-05-').replace('มิ.ย.', '-06-').replace('ก.ค.', '-07-')
+                .replace('ส.ค.', '-08-').replace('ก.ย.', '-09-').replace('ต.ค.', '-10-').replace('พ.ย.', '-11-')
+                .replace('ธ.ค.', '-12-'))
+        time = time.replace('น.', '').replace('น', '').replace('นาฬิกา', '').replace(' ', '')
         # print(time)
         # print(date)
-        date_time_str = date+' '+time
+        date_time_str = date + ' ' + time
         # print(date_time_str)
         date_time_obj = datetime.datetime.strptime(date_time_str, '%d-%m-%Y %H:%M')
         # date_time_obj = datetime.datetime.strptime(date, '%d-%m-%Y')
-        
+
         # print(date_time_obj.date())
         # date_time_obj = datetime.datetime.strptime(time, '%H:%M')
         # print(date_time_obj.time())
@@ -208,7 +208,7 @@ def get_datetime_from_news(file_name):
         # date_time.append(date_time_obj.date())
         # date_time.append(date_time_obj.time())
         # print(date_time_obj)
-    
+
     rf.close()
     return date_time_obj
 
@@ -220,7 +220,7 @@ def remove_stopword(text):
     """
     words = {'จะ', 'เเล้ว', 'ได้', 'อัน', 'ว่า', 'ที่', 'จึง', 'จาก', 'เป็น', 'ไป', 'หรือ',
              'นั้น', 'อาจ', 'ซึ่ง', 'ก็', 'มา', 'กับ', 'ไว้', 'ทั้งๆที่', 'น่า', 'ก่อน', 'ทำ',
-             'โดย', 'นีั', 'เเล้ว', 'ไร', 'ของ', 'ขอ', 'ว่า', 'เเค่', 'กัน', 'ก็', 'เพื่อ',
+             'โดย', 'นีั','ไร', 'ของ', 'ขอ', 'ว่า', 'เเค่', 'กัน', 'ก็', 'เพื่อ',
              'ละ', 'คือ', 'เเละ', 'ด้วย', 'จาก', 'จึง', 'ใน', 'ๆ', 'ของ', 'ครั้ง', 'เมื่อ',
              'ต่อ', 'นี้', '!', 'ทั้ง', 'มักจะ', 'ของ', 'เนื่องจาก', 'กับ', 'ดังนี้', 'เข้า'}
 

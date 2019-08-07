@@ -43,74 +43,44 @@ if __name__ == '__main__':
     tag_person = tag.tag_person(tag_time)
     tag_adverb = tag.tag_adverb(tag_person)
     tag_location = tag.tag_location(tag_adverb)
-    # tag_location = tag_location.replace('<จังหวัด_ผิด>จังหวัด','<จังหวัด_ผิด>')
-    # tag_location = tag_location.replace('<ตำบล_ผิด>ต.','<ตำบล_ผิด>')
-    # print(tag_location)
     """
     word token and tag action and location
     """
     word_tokenize = wt.word_segment_identify_tag(tag_location)
-    word_tokenize = wt.remove_stopword(word_tokenize)
-    # print(word_tokenize)
-    tag_action = tag.tag_action(word_tokenize)
-    # print(tag_action)
-    # tag_object = tag.tag_secondary_action_1(tag_action)
-    result = tag_action.replace("|", "")
-    # print('----------------B--------------------')
-    print(result)
+    rm_stopword = wt.remove_stopword(word_tokenize)
+    print(rm_stopword)
+    # tag_action = tag.tag_action(word_tokenize)
+    # #print(tag_action)
+    # tag_object = tag.tag_secondary_action(tag_action,1)
+    # result = tag_action.replace("|", "")
+    #print('----------------B--------------------')
+    #print(result)
     """
     edit wrong word from <fail>
     """
-    result = sc.Autocorrection(result)
-    print('----------------A--------------------')
-    print(result)
-    # result = '<สถานที่>สภ.ปากชม </สถานที่>ส่วนร่าง<คน>ผู้เสียชีวิต</คน>นำไปชันสูตรพลิกศพที่<โรงพยาบาล>รพ.ปากชม</โรงพยาบาล>'
-    # print(" ")
-    # print("this true result " + result)
-    # wr.export_text(result,n)
-
+    # result = sc.Autocorrection(result)
+    # print('----------------A--------------------')
+    # print(result)
     """
     function test rule discover crime 
     """
-    obj_r = rule.results_from_rules(result, n)
-    # print('=========================== result ===========================')
-    obj_r.Title = title
-    obj_r.Content = news
-    obj_r.DateTime = date_time
-    obj_r.Link = file_name
-    
-    # da = date_time[0]
-    # print(type(da))
-    # d = datetime.datetime.strptime(str(da), "%Y-%m-%d")
-    # dd = datetime.datetime(2009, 11, 12)
-    # obj_r.Date = dd
-    # print(type(dd))
-    # print(obj_r.__dict__)
+    # obj_r = rule.results_from_rules(result, n)
+    # # print('=========================== result ===========================')
+    # obj_r.Title = title
+    # obj_r.Content = news
+    # obj_r.DateTime = date_time
+    # obj_r.Link = file_name
 
-    # rule_st.cause_rule_results(result,n)
-    # list_p = []  # value read to keep on database
-    # list_2d = rule.rule_strat(result)
-    # for i in range(len(list_2d)):
-    #      for j in range(len(list_2d[i])):
-    #         list_p.append(list_2d[i][j].__dict__)
-    #
-    # print(list_p)
     """
     insert data to database 
     """
+    # dbs = ''
+    # client = MongoClient('localhost',27017)
+    # db = client.get_database("news")
+    # news = db.datanews
+    # # print(y)
+    # print(news.insert_one(obj_r.__dict__))
     #
-    # client = MongoClient('localhost', 27017)
-    # db = client.get_database("mydatabase")
-    # news = db.mynews
-    # news.insert_many(obj_r.__dict__)
-
-    dbs = 'mongodb+srv://wathiwut193:Cc2191996@cluster0-pjudc.mongodb.net/test?retryWrites=true'
-    client = MongoClient(dbs,27017)
-    db = client.get_database("news")
-    news = db.datanews
-    # print(y)
-    print(news.insert_one(obj_r.__dict__))
-
-    end = time.time()
-    print(end-start)
+    # end = time.time()
+    # print(end-start)
     # pip install dnspython
